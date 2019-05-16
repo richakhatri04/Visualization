@@ -1,0 +1,64 @@
+html,body{
+    margin:0;
+    height:100%;
+}
+
+#barchart {
+	width: 800px; 
+	height: 400px; 
+	/* background-color: orange; */
+	margin: 25px auto;
+}
+.line {
+    fill: none;
+    stroke: red;
+    stroke-width: 3;
+}
+.focus circle {
+    fill: none;
+    stroke: steelblue;
+  }
+  .overlay {
+    fill: none;
+    pointer-events: all;
+  }
+  
+  /* Style the dots by assigning a fill and stroke */
+  .dot {
+      fill:blue;
+      /* fill: #ffab00; */
+      stroke: #fff;
+  }
+  .visual_shadow{
+      float: left;
+      overflow: hidden;
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+      padding: 5px;
+  }
+  .ml-10{
+      margin-left: 10px;    
+  }
+  .visual-container{
+      padding: 5px;
+  }
+  .loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid blue;
+    border-right: 16px solid green;
+    border-bottom: 16px solid red;
+    border-left: 16px solid pink;
+    width: 240px;
+    height: 240px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image 1 Visualisation</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="d3.min.js"></script>
+</head>
+
+<body>
+        <script src="colorbrewer.js" type="text/JavaScript"></script>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="Image2_Visualization.html">Visualize Climate conditions of Halifax</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="Image1_Visualization.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Image2_Visualization.html">Heat Map</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    <div style="float: left;cursor: pointer;">
+        <svg width="800" height="40">
+            <g id="wrapper" transform="translate(30, 30)">
+            </g>
+    </svg>
+    </div>
+    <div id="ddvalues" style="float: right;"></div>
+    <div class="clearfix"></div>
+    <div class="visual-container">
+    <div class="visual_shadow">
+    <div id="svg1"> 
+    </div>
+</div>
+<div class="visual_shadow ml-10">
+    <div id="svg2"></div>
+    </div>
+</div>
+    <script type="text/javascript" src="shapes.js"></script>
+</body>
+
+</html>
